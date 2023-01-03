@@ -1,0 +1,9 @@
+<!---Behaviour subject-->
+<input type="text" name="name" placeholder="Name" #name>
+<button (click)="submitValue(name)">Submit</button><br/>
+Parent Component:{{nameValue}} <br/>
+<app-comp1></app-comp1> <br/>
+
+<!----Event Emmiter----->
+<app-comp2 (sendVal)="getData($event)" [data]="data"></app-comp2> <br/>
+Parent Component: {{value}}
